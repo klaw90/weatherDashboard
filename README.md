@@ -2,9 +2,13 @@
 
 A Simple 5 Day Weather Forecasting App
 
+<img width="1366" alt="Screen Shot 2021-02-28 at 3 20 38 PM" src="https://user-images.githubusercontent.com/72533535/109432316-8ec36900-79d8-11eb-8e2f-7e5f7596a6f5.png">
+
+
 Project Details:
 
 GIVEN acceptance criteria below
+
 UTILIZE the Open Weather API to create a 5-day forecast app
 Acceptance Criteria & Developer Notes
 GIVEN a weather dashboard with form inputs
