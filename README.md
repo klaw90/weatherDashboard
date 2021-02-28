@@ -4,7 +4,9 @@ A Simple 5 Day Weather Forecasting App
 
 Project Details:
 
-GIVEN acceptance criteria below
+GIVEN acceptance criteria below:
+
+
 UTILIZE the Open Weather API to create a 5-day forecast app
 Acceptance Criteria & Developer Notes
 GIVEN a weather dashboard with form inputs
