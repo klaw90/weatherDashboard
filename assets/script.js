@@ -97,15 +97,14 @@ $(function () {
         url: url,
         dataType: "json",
         success: function (data) {
-          // overwrite any existing content with title and empty row
           $("#forecast")
             .html('<h4 class="mt-3">5-Day Forecast:</h4>')
             .append('<div class="row">');
   
           // loop over all forecasts (by 3-hour increments)
           for (var i = 0; i < data.list.length; i++) {
-            // only look at forecasts around 3:00pm
-            if (data.list[i].dt_txt.indexOf("15:00:00") !== -1) {
+            // only look at forecasts around 12:00pm
+            if (data.list[i].dt_txt.indexOf("12:00:00") !== -1) {
               // create html elements for a bootstrap card
               var col = $("<div>").addClass("card-group col-md-2");
               var card = $("<div>").addClass("card bg-info text-white");
@@ -172,7 +171,7 @@ function getUVIndex(lat, lon) {
   });
 }
 
-// get current history, if any
+// get current history
 var history = JSON.parse(window.localStorage.getItem("history")) || [];
 
 if (history.length > 0) {
